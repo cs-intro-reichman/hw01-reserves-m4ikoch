@@ -3,7 +3,11 @@
  * The program prints how to represent this quantity using as many quarters as possible, plus the remainder in cents.
  */
 public class Coins {
-	public static void main(String[] args) {
-		// Put your code here
+	public static void main(String[] args)
+	{
+		int x = Integer.parseInt(args[0]);
+		int quarters = x / 25;
+		int cents = x % 25;
+		System.out.println("Use " + quarters + " quarters and " + cents + " cents");
 	}
 }
