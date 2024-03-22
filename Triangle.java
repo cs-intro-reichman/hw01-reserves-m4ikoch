@@ -1,16 +1,13 @@
-/*
- * Three sides can form a triangle if the sum of the lengths of any two sides is greater than the length of the remaining side. 
- * This is known as the Triangle Inequality Theorem. 
- * Write a program that tests if three given integers form a triangle.
- */ 
+//this program recieves 3 numbers and returns
+// True if they can represent the lengths of 3 sides of a trianle and False if not.
 public class Triangle {
-	public static void main(String[] args) 
-	{
-		int a = Integer.parseInt(args[0]);
-		int b = Integer.parseInt(args[1]);
-		int c = Integer.parseInt(args[2]);
-		boolean isTriangle;
-		isTriangle = ((a + b > c) && (a + c > b) && (b + c > a));
-		System.out.println(a + ", " + b + ", " + c + " :" +isTriangle);	
-	}
+    public static void main(String args[]) {
+        int a = Integer.parseInt(args [0]);
+        int b = Integer.parseInt(args [1]);
+        int c = Integer.parseInt(args [2]);
+        boolean tri = (a + b > c) && (a + c > b) && (b + c > a);
+        System.out.println(a + ", " + b + ", "  + c + ": " + tri);
+         
+    }
+
 }

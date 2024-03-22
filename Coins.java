@@ -1,13 +1,11 @@
-/*
- * Write a program that gets a quantity of cents as a command-line argument.
- * The program prints how to represent this quantity using as many quarters as possible, plus the remainder in cents.
- */
+//this program recieves a number of cents and returns the max num of quarters
+// and min num of cents you can use to represent the same amount of money
 public class Coins {
-	public static void main(String[] args)
-	{
-		int x = Integer.parseInt(args[0]);
-		int quarters = x / 25;
-		int cents = x % 25;
-		System.out.println("Use " + quarters + " quarters and " + cents + " cents");
-	}
+    public static void main(String args[]) {
+        int quarters, cents;
+        int sum = Integer.parseInt(args[0]);
+        cents = sum % 25;
+        quarters = (sum - cents) / 25;
+        System.out.println("Use " + quarters + " quarters and " + cents + " cents");
+    } 
 }
